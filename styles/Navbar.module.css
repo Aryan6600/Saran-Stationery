@@ -1,0 +1,96 @@
+.navbar{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.brand{
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.navigation{
+    min-width: 100%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.menu{
+    padding: 5px;
+    height: 42px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-left: auto;
+}
+.line{
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    background-color: black;
+}
+.link{
+    display: block;
+}
+.navlink{
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+.action{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 9999px;
+    border: 1px solid rgb(105, 167, 248);
+    color: rgb(105, 167, 248);
+    width: max-content;
+    display: none;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0.03);
+}
+
+@media (min-width:768px) {
+    .navlink{
+        border: none;
+        margin-bottom: none;
+    }
+    .btn{
+        display: block;
+    }
+    .navigation{
+        min-width: max-content;
+        flex-direction: row;
+        padding: 0;
+        display: flex !important;
+    }
+    .menu{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+    }
+}

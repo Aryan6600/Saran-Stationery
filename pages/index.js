@@ -8,7 +8,6 @@ import Image from 'next/image'
 import blank from '../public/blank.jpg'
 
 
-
 export default function Home() {
   const [products, setProducts] = useState([])
   const [banner,setBanner] = useState('')

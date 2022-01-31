@@ -1,5 +1,4 @@
 import styles from '../../styles/About.module.css'
-import Image from 'next/image';
 import Head from 'next/head';
 
 export default function index() {
@@ -11,7 +10,6 @@ export default function index() {
                 crossOrigin="anonymous"></script>
         </Head>
         <div className={styles.banner}>
-            <Image quality='10' alt="banner" priority src='/about.jfif' layout='fill' />
             <div className={styles.wrapper}>
                 <h2>About Us</h2>
             </div>

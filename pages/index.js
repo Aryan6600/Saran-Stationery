@@ -9,17 +9,11 @@ import Head from 'next/head'
 
 export default function Home() {
   const [products, setProducts] = useState([])
-  const [banner, setBanner] = useState('')
   useEffect(() => {
     const app = initializeApp(firebaseConfig)
     const getData = async () => {
       const database = getDatabase(app)
       const databaseRef = ref(database, 'products/')
-      const bannerRef = ref(database, 'banner')
-      onValue(bannerRef, (snapshot) => {
-        if (window.innerWidth > 768) setBanner(snapshot.val().desktop)
-        else setBanner(snapshot.val().mobile);
-      })
       onValue(databaseRef, (snapshot) => {
         snapshot.forEach(snap => {
           console.log(snap.key);

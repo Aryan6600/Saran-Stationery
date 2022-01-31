@@ -1,6 +1,6 @@
 .banner{
-  height: auto;
   min-height: 350px;
+  max-height: 700px;
   margin-top: 4.3em;
   display: block;
   position: relative;
@@ -12,6 +12,7 @@
   align-items: baseline;
   justify-content: flex-end;
   padding: 20px;
+  object-fit: fill;
 }
 .bannerCnt{
   z-index: 1;

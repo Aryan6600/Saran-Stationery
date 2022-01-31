@@ -12,7 +12,7 @@ export default function Navbar() {
     return <>
         <nav id="navbar" className={styles.navbar}>
             <div className={styles.container}>
-                <h2 className={styles.brand}>StudyWays</h2>
+                <h2 className={styles.brand}>SaranStationery</h2>
                 <div className={styles.menu} onClick={toggle}>
                     <div className={styles.line}></div>
                     <div className={styles.line}></div>
@@ -25,9 +25,9 @@ export default function Navbar() {
                     <Link href="/about" className={styles.link}>
                         <a className={styles.navlink}>About</a>
                     </Link>
-                    <Link href="/blog" className={styles.link}>
+                    {/* <Link href="/blog" className={styles.link}>
                         <a className={styles.navlink}>Blog</a>
-                    </Link>
+                    </Link> */}
                 </div>
                 <div className={styles.action}>
                     <Link href="/">

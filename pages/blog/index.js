@@ -9,7 +9,7 @@ export default function index() {
             <meta name="description" content="Saran stationery, a gift shop, we provide you with the best quality products online." />
         </Head>
         <div className={styles.banner}>
-            <Image quality='30' priority src='/about.jfif' layout='fill'/>
+            <Image quality='30' priority src='/about.jfif' alt="" layout='fill'/>
             <div className={styles.wrapper}>
                 <h2>About Us</h2>
             </div>

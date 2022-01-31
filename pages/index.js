@@ -20,7 +20,8 @@ export default function Home() {
     const databaseRef = ref(database, 'products/')
     const bannerRef = ref(database, 'banner')
     onValue(bannerRef,(snapshot) => {
-      setBanner(snapshot.val());
+      if(window.innerWidth > 768) setBanner(snapshot.val().desktop)
+      else setBanner(snapshot.val().mobile);
     })
     onValue(databaseRef, (snapshot) => {
       snapshot.forEach(snap => {
@@ -35,10 +36,10 @@ export default function Home() {
       <meta name='description' content='Satationery Shop, Best Stationery Items, get your favourite stationery items'></meta>
     </Head>
       <div className={styles.banner}>
-        <Image quality='30' priority layout='fill' src={banner==""?blank:banner} alt=""/>
+          <Image quality='30' priority layout='fill' src={banner==""?blank:banner} alt=""/>
         <div className={styles.bannerCnt}>
-          <h2 className={styles.bitle}>Welcome to StudyWays</h2>
-          <p className={styles.bext}>The best selling notebooks are build here.</p>
+          <h2 className={styles.bitle}>Welcome to Saran Stationery</h2>
+          <p className={styles.bext}>A stationery for everyone, everywhere</p>
         </div>
       </div>
       <div className={styles.container}>

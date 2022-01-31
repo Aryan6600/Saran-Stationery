@@ -35,7 +35,7 @@ export default function Home() {
       <meta name='description' content='Satationery Shop, Best Stationery Items, get your favourite stationery items'></meta>
     </Head>
       <div className={styles.banner}>
-        <Image priority layout='fill' src={banner==""?blank:banner} alt=""/>
+        <Image quality='30' priority layout='fill' src={banner==""?blank:banner} alt=""/>
         <div className={styles.bannerCnt}>
           <h2 className={styles.bitle}>Welcome to StudyWays</h2>
           <p className={styles.bext}>The best selling notebooks are build here.</p>

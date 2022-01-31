@@ -42,7 +42,7 @@ export default function Item() {
             </Head>
             <div className={styles.content}>
                 <div className={styles.product}>
-                    <Image width='500' height='400' alt="" src={data ? data.image : image} />
+                    <Image width='500' quality='10' height='400' alt="" src={data ? data.image : image} />
                     <div className={styles.protent}>
                         <h2>{data ? data.title : "Loading..."}</h2>
                         <span>&#8377; {data ? data.price : "Loading..."} per peice</span>

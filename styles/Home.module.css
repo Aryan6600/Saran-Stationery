@@ -9,20 +9,22 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   object-fit: fill;
+  background-color: rgb(243, 243, 243);
 }
 .bannerCnt{
   z-index: 1;
+  text-align: center;
 }
 .bitle{
-  color: white;
+  color: black;
   font-size: 2em;
 }
 .bext{
-  color: white;
+  color: black;
   font-size: 18px;
   line-height: 25px;
 }
@@ -71,5 +73,8 @@
 @media (min-width:768px) {
   .grid{
     grid-template-columns: repeat(5,minmax(0,1fr));
+  }
+  .bitle{
+    font-size: 3em;
   }
 }

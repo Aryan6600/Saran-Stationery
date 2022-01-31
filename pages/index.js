@@ -5,8 +5,6 @@ import { useEffect, useState } from 'react'
 import firebaseConfig from '../Services/firebase'
 import { initializeApp } from 'firebase/app'
 import Head from 'next/head'
-import Image from 'next/image'
-import blank from '../public/blank.jpg'
 
 
 export default function Home() {
@@ -45,7 +43,6 @@ export default function Home() {
           crossOrigin="anonymous"></script>
       </Head>
       <div className={styles.banner}>
-        <Image quality='30' priority layout='fill' src={banner == "" ? blank : banner} alt="" />
         <div className={styles.bannerCnt}>
           <h2 className={styles.bitle}>Welcome to Saran Stationery</h2>
           <p className={styles.bext}>A stationery for everyone, everywhere</p>

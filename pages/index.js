@@ -24,7 +24,6 @@ export default function Home() {
     })
     onValue(databaseRef, (snapshot) => {
       snapshot.forEach(snap => {
-        console.log(snap.val());
         setProducts(products => [...products,snap.val()])
       })
     },{onlyOnce:true})

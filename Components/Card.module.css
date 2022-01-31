@@ -13,6 +13,11 @@
   font-size: 1.2em;
   font-weight: normal;
 }
+.cardPrice{
+  color: gray;
+  display: block;
+  text-align: right;
+}
 .card:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }

@@ -39,8 +39,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Saran Stationery</title>
-        <meta name='description' content='Satationery Shop, Best Stationery Items, get your favourite stationery items'></meta>
+        <title>Saran Stationery and Gift Shop</title>
+        <meta name='description' content='Satationery Shop, Best Stationery Items, get your favourite stationery items,saranstationery and gift shop'></meta>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587609475493832"
           crossOrigin="anonymous"></script>
       </Head>

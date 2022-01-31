@@ -5,7 +5,7 @@ import Head from 'next/head';
 export default function index() {
     return <>
         <Head>
-            <title>About | Saran Stationery</title>
+            <title>About - Saran Stationery and Gift Shop</title>
             <meta name="description" content="Saran stationery, a gift shop, we provide you with the best quality products online." />
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587609475493832"
                 crossOrigin="anonymous"></script>

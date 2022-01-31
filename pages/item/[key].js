@@ -24,16 +24,18 @@ export default function Item() {
             if (snapshot.exists()) {
                 console.log(snapshot.val());
                 setData(snapshot.val())
+            }else{
+                router.push('/')
             }
-        }).catch((error) => {
-            console.error(error);
+        }).catch(() => {
+            router.push('/')
         });
     }, [key])
 
     return (
         <>
             <Head>
-                <title>{data?data.title:"Loading.."} | Saran Stationery</title>
+                <title>{data?data.title:"Loading.."} - Saran Stationery</title>
                 <meta name="description" content={data?data.description:"Saran Stationery, gift shop,get best quality stationery items,pen,pencils etc."} />
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587609475493832"
                     crossOrigin="anonymous"></script>

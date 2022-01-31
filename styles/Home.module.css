@@ -1,9 +1,9 @@
 .banner{
   height: auto;
-  min-height: 400px;
-  background: linear-gradient(180deg,rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1643543232295-061cc8f9069c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+  min-height: 350px;
   margin-top: 4.3em;
   display: block;
+  position: relative;
   background-position: center;
   background-size: 100%,100%;
   background-repeat: no-repeat;
@@ -12,6 +12,9 @@
   align-items: baseline;
   justify-content: flex-end;
   padding: 20px;
+}
+.bannerCnt{
+  z-index: 1;
 }
 .bitle{
   color: white;

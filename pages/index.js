@@ -34,7 +34,7 @@ export default function Home() {
         <title>Saran Stationery and Gift Shop</title>
         <meta name='description' content='Satationery Shop, Best Stationery Items, get your favourite stationery items,saranstationery and gift shop'></meta>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621388482291504"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
       </Head>
       <div className={styles.banner}>
         <div className={styles.bannerCnt}>

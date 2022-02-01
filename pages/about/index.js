@@ -7,7 +7,7 @@ export default function index() {
             <title>About - Saran Stationery and Gift Shop</title>
             <meta name="description" content="Saran stationery, a gift shop, we provide you with the best quality products online." />
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621388482291504"
-                crossorigin="anonymous"></script>
+                crossOrigin="anonymous"></script>
         </Head>
         <div className={styles.banner}>
             <div className={styles.wrapper}>

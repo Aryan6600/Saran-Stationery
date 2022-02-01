@@ -6,21 +6,19 @@ import firebaseConfig from '../Services/firebase'
 import { initializeApp } from 'firebase/app'
 import Head from 'next/head'
 
+const app =  initializeApp(firebaseConfig)
+const database = getDatabase(app)
 
 export default function Home() {
   const [products, setProducts] = useState([])
   useEffect(() => {
-    const app = initializeApp(firebaseConfig)
     const getData = async () => {
-      const database = getDatabase(app)
       const databaseRef = ref(database, 'products/')
       onValue(databaseRef, (snapshot) => {
         snapshot.forEach(snap => {
-          console.log(snap.key);
           let id = snap.key
           let obj = snap.val()
           obj.id = id
-          console.log(obj);
           setProducts(products => [...products, obj])
         })
       }, { onlyOnce: true })
